@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Cart{% endblock title %}
+{% block main-content %}
+<div class="container border h-50 text-center py-4">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="image1">
+    
+    <input type="submit"name='Predict'>
+</form>
+</div>
+{% endblock main-content %}

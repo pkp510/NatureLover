@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Cart{% endblock title %}
+{% block main-content %}
+<div class="container border h-50 "><h1>Prediction Result</h1>
+    
+    
+    <!-- prediction.html -->
+
+{% if prediction %}
+  <p>Predicted Flower: {{ prediction }}</p>
+{% else %}
+  <p>No prediction available</p>
+{% endif %}
+
+
+</div>
+{% endblock main-content %}
